@@ -19,7 +19,7 @@ const config = {
     'Fast, easy and reliable testing for anything that runs in a browser.',
   url: 'https://docs.cypress.io',
   baseUrl: '/',
-  onBrokenLinks: 'throw', // TODO: update this to throw when we go live to production
+  onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'throw',
   favicon: undefined,
 
@@ -118,7 +118,7 @@ const config = {
           {
             href: 'https://github.com/cypress-io/cypress-documentation',
             position: 'right',
-            className: 'github-logo',
+            className: 'header-github-logo',
             'aria-label': 'Cypress GitHub repository',
           },
           {
@@ -249,7 +249,7 @@ const config = {
         darkTheme: darkCodeTheme,
       },
       zoom: {
-        selector: ':not(.mediaImage, .navbar__logo img)', // don't zoom these images
+        selector: ':not(.mediaImage, .navbar__logo img, .logo)', // don't zoom these images
         background: {
           light: 'rgb(50, 50, 50)',
           dark: 'rgb(50, 50, 50)',
